@@ -27,14 +27,14 @@ program find_R
 
     print*, "Value of R is:", R
 
-    open (newunit=fu, action='write', file="data.txt", status='replace')
+    open (newunit=fu, action='write', file="data.dat", status='replace')
 
     print*, "Value I(j), vfit(j) are:"
 
     do j = 1, n
         vfit(j) = R*i(j)
         print*, i(j), vfit(j)
-        write (fu, *) i(j), vfit(j)
+        write (fu, *) i(j), vfit(j), v(j)
     end do
 
     close (fu)
