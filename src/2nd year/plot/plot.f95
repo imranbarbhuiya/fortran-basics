@@ -26,15 +26,14 @@ program find_R
     R = (n*s3 - s1*s4)/(n*s2 - s1*s1)
 
     print*, "Value of R is:", R
+
+    open (newunit=fu, action='write', file="data.txt", status='replace')
+
     print*, "Value I(j), vfit(j) are:"
+
     do j = 1, n
         vfit(j) = R*i(j)
         print*, i(j), vfit(j)
-    end do
-
-    open (newunit=fu, action='write', file="data.txt", status='replace')
-    
-    do j = 1, n
         write (fu, *) i(j), vfit(j)
     end do
 
