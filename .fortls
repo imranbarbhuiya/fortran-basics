@@ -1,0 +1,8 @@
+{
+  "excl_paths": [
+    "src/Debug",
+    "src/Release"
+  ],
+  "lowercase_intrinsics": true,
+  "debug_log": false
+}

@@ -1,0 +1,28 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "comment",
+        "scope": [
+          "comment",
+          "constant.language.logical",
+          "keyword.logical",
+          "variable.parameter.dummy-variable.fortran.modern",
+          "string.quoted.single.fortran",
+          "string.quoted.double.fortran",
+          "support.function.intrinsic.fortran"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "comment",
+        "scope": ["variable.parameter.fortran"],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  }
+}
